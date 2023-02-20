@@ -11,7 +11,7 @@ app.use('/add-product',(req,res)=>{
     res.send('<h1> Add product page!!</h1>')
     
 })
-app.use('/product',(req,res,next)=>{
+app.get('/product',(req,res,next)=>{
     console.log(req.body)
     
     res.redirect('/')
